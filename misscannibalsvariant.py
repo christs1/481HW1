@@ -42,7 +42,7 @@ class MissCannibalsVariant(Problem):
                     possible_actions.append(action)
         
         return possible_actions
-a
+
 if __name__ == '__main__':
     mc = MissCannibalsVariant(4,4)
     
