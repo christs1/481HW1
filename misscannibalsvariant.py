@@ -49,9 +49,11 @@ if __name__ == '__main__':
 
     print(mc.goal_test((0, 0, False)))  
     print(mc.goal_test((3, 3, True)))   
-    
- 
     print(mc.actions((3, 3, True)))  
-    
-  
     print(mc.result((3, 3, True), 'MC'))  
+
+    path = depth_first_graph_search(mc).solution()
+    print(path)
+    path = breadth_first_graph_search(mc).solution()
+    print(path)
+
